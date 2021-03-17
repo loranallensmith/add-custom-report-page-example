@@ -2,9 +2,11 @@
 
 An example WooCommerce Admin extension that demonstrates how to build a custom report that uses WooCommerce Components to query data using core WooCommerce Data Stores.
 
-This extension registers a custom report page with WooCommerce Admin that uses the `withSelect` React hook to connect the rendered Report component to the WooCommerce Reports Data Store. The `ReportFilters` component updates the query parameters, which in turn updates the query provided to the Reports Data Store and refreshes the `TableCard` in the report.
+## About this example
 
-The rendered report also contains `Card` objects with some basic debugging data to help demonstrate what data is being passed around when you modify the report filters with the `ReportFilters` dropdown.
+This extension registers a custom report page with WooCommerce Admin that uses the [`withSelect`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-data/#withSelect) React hook to connect the rendered Report component to the WooCommerce Reports Data Store. The [`ReportFilters`](https://woocommerce.github.io/woocommerce-admin/#/components/packages/filters/README) component updates the query parameters, which in turn updates the query provided to the Reports Data Store and refreshes the [`TableCard`](https://woocommerce.github.io/woocommerce-admin/#/components/packages/table/README) in the report.
+
+The rendered report also contains [`Card`](https://woocommerce.github.io/woocommerce-admin/#/components/packages/card/README) objects with some basic debugging data to help demonstrate what data is being passed around when you modify the report filters with the [`ReportFilters`](https://woocommerce.github.io/woocommerce-admin/#/components/packages/filters/README) dropdown.
 
 
 ## Try it out
@@ -28,9 +30,11 @@ This transpiles all of the project's JavaScript into a browser-ready asset that 
 
 Once the extension's JavaScript has been built, activate the extension in your WordPress environment (along with WooCommerce) and browse to `Analytics`:arrow_right:`Example` in your admin area.  You should see the sample report displayed.
 
+<img width="1680" alt="Screen Shot 2021-03-16 at 10 12 28 PM" src="https://user-images.githubusercontent.com/3477155/111406720-2bf4f180-86a9-11eb-9f70-bf0c489ec660.png">
+
 ---
 
-This extension was generated using the `create-wc-extension` script that comes bundled with WooCommerce Admin.
+This extension was generated using the [`create-wc-extension`](https://github.com/woocommerce/woocommerce-admin/tree/b17aab156d9fb6e8fbc2ce59ba34d82fd20d9f5f/bin/starter-pack) script that comes bundled with WooCommerce Admin.
 
 ---
 
